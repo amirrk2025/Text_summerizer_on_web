@@ -7,11 +7,11 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static("public")); // Serve static files from the public folder
+app.use(express.static("public")); 
 
 // API Key and Base URL
-const API_KEY = "tpsg-7JxYIqr3tGlpZ0R1RLPlZ9chi0rS1L5";
-const API_BASE = "https://api.metisai.ir/openai/v1";
+const API_KEY = "YOUR_API_KEY";
+const API_BASE = "URL";
 
 // Endpoint for handling chat
 app.post("/api/chat", async (req, res) => {
